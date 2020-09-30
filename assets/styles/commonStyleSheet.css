@@ -1,0 +1,187 @@
+html, body{
+    width: 100%;
+    background-color: #fccbcb;
+    margin: 0;
+    top: 0;
+}
+body{
+    font-family: Alef, SansSerif;
+    position: relative;
+}
+.header{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    position: relative;
+}
+
+.header img{
+    width: 100%;
+    height: 500px;
+}
+
+.headerText{
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: gray;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    min-height: 300px;
+    box-shadow: gray 0 0 2px 2px;
+    text-transform: capitalize;
+}
+
+.headerContainer{
+    position: absolute;
+    margin: 0;
+    min-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.lineBreak{
+    position:relative;
+    height: 20px;}
+
+.horizontalSpace{
+    position: relative;
+    display: inline-block;
+    width: 10%;
+}
+.headerContainerButton{
+    position: relative;
+    padding: 10px;
+    background-color: #838383;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white
+}
+
+.headerContainerButton:hover{
+    color:lightgray;
+    border: 1px solid white;
+}
+
+.navbar{
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    background-color: #838383;
+    box-shadow: black 0px 1px 5px 1px;
+    padding-left: 5px;
+}
+
+.navbarItem{
+    margin: 5px;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    border: 1px solid darkslategray;
+    border-radius: 5px;
+    box-shadow: black 0 0 1px 0px;
+}
+
+.navbarItemSelected{
+    background-color: #ad9d9d;
+    color: darkslategray;
+}
+
+.navbarItem:hover{
+    color: lightgray;
+    border: 1px solid lightgray;
+}
+
+.content{
+    z-index: 1;
+    margin-top: 40px;
+    position: relative;
+}
+
+#Offers{
+    text-transform: capitalize;
+    text-align: center;
+    margin:auto;
+    top: 50%;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+#Offers h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.offersContainer{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    box-shadow: black 0px 0px 5px 0px;
+    background-color: darkslategray;
+    overflow: auto;
+}
+
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.offerItem{
+    display: inline-block;
+    position: relative;
+    min-width: 250px;
+    height: 300px;
+    margin: 5px;
+    margin-top: 20px;
+    background-color: gray;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.offerItem span::before{
+    content: "-";
+}
+.offerItem span{
+    text-align: left;
+    display: block;
+    margin-left: 10px;
+}
+
+.orderButton{
+    position: relative;
+    top: 40px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    border: 1px solid darkslategray;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.orderButton:hover{
+    color: lightgray;
+    border: 1px solid black;
+}
+
+.footer{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: darkslategray;
+}
